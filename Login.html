@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>Register</h2>
+                    <form>
+                        <input type="UserName" placeholder="UseName" class="input-box" required> 
+                        <input type="Password" placeholder="Password" class="input-box" required>
+                        <button class="loginbtn">Login</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="signup" onclick="OpenRegiser()">Sing Up</button>
+                    <a href="">Forget Password</a>
+                </div>
+               
+                <div class="card-back">
+                    <h2>Register</h2>
+                    <form>
+                        <input type="Name" placeholder="Name" class="input-box" required> 
+                        <input type="Password" placeholder="Password" class="input-box" required>
+                        <input type="email" class="input-box" placeholder="Email">
+                        <button class="loginbtn">Sign Up</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="signup" onclick="OpenLogin()">I've an account</button>
+                    <a href="">Forget Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var card=document.getElementById("card");
+        function OpenRegiser()
+        {
+            card.style.transform="rotateY(-180deg)";
+        }
+        function OpenLogin()
+        {
+            card.style.transform="rotateY(0deg)"
+        }
+    </script>
+    
+</body>
+</html>
